@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if current_user.is_anonymous %}
+  <h1>Hello, stranger!</h1>
+
+{% else  %}
+
+  <div id="page-container">
+  <header id="main-header" data-height-onload="25">
+  <div class="container clearfix et_menu_container">
+  <div class="logo_container">
+  <span class="logo_helper"></span>
+  <a href="https://www.perlara.com/">
+  <img src="https://www.perlara.com/wp-content/uploads/2017/06/Perlara®-logo-1600x578px-v1.jpg" alt="Perlara" id="logo" data-height-percentage="72" />
+  </a>
+  </div>
+
+  <h1>Hi, {{ current_user.username }}!</h1>
+  <h2>Click <a href="/exp_viz">here</a> to go to the Experiment Viewer.</h2>
+  <h2>Click <a href="/new_exp">here</a> to go to make a new experiment.</h2>
+{% endif %}
+{% endblock %}
