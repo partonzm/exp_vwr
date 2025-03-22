@@ -12,7 +12,7 @@ Flask>=0.12.3
 Flask-Compress>=1.4.0
 Flask-SeaSurf>=0.2.2
 functools32>=3.2.3.post2
-gunicorn>=19.7.1
+## # removed from inactive repo due to security concerns
 idna>=2.5
 ipython-genutils>=0.2.0
 itsdangerous>=0.24
